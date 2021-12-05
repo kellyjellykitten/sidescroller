@@ -192,7 +192,8 @@ while run:
         pause += 1
         if pause > fallSpeed * 2:
             endScreen()
-
+    #speed is 30, so we divide by 10 and then subtract 3 for a start score of 0
+    #everytime we go up by 10 in speed, scores goes up by 1
     score = speed//10 - 3
 
     for obstacle in obstacles:
